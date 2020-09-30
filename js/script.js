@@ -52,15 +52,11 @@ function finish() {
         image.src = e.target.result;
         var profilePhotoBox = document.getElementById("profile-photo-box")
         profilePhotoBox.appendChild(image);
-
-        localStorage.setItem("ProfileImage", image);
     }
     reader.readAsDataURL(file);
 
      //get all inputs
      var lastName = $("#last-name").val();
- 
-     var middleName = $("#middle-name").val();
      
      var firstName = $("#first-name").val();
  
